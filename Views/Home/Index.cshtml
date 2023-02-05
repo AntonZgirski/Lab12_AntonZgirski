@@ -1,0 +1,32 @@
+﻿@model BaseModel
+@{
+    ViewData["Title"] = "Save Data";
+}
+
+<form asp-controller="Home" asp-action="SaveData" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="name">SecondName:</label>
+        <input type="text" id="sname" name="sname">
+    </div>
+    <div>
+        <label for="name">Age:</label>
+        <input type="text" id="age" name="age">
+    </div>
+    <div>
+        <label for="name">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div>
+        <label for="name">Password:</label>
+        <input type="password" id="pas" name="pas">
+    </div>
+    <div>
+        <label for="name">Phone Number:</label>
+        <input type="text" id="number" name="number">
+    </div>
+    <button type="submit">Save</button>
+</form>
